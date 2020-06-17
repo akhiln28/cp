@@ -10,6 +10,8 @@ using namespace std;
 int a[max_n];
 int b[max_n];
 
+
+// this is very interesting, i am writing from my ipad using the cosmic byte keyboard
 int main()
 {
     int n;
