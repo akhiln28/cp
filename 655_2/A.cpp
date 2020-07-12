@@ -14,10 +14,16 @@ using namespace std;
 
 int main()
 {
-    int t;
+    int t, n;
     cin >> t;
     while (t--)
     {
+        cin >> n;
+        for (size_t i = 0; i < n; i++)
+        {
+            cout << "1 ";
+        }
+        cout << endl;
     }
     return 0;
 }
