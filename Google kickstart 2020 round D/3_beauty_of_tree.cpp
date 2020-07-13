@@ -16,7 +16,6 @@ public:
     int idx;
     int referenceA;
     int referenceB;
-    int referenceAB;
     node *parent;
     node(int idx)
     {
@@ -24,7 +23,6 @@ public:
         parent = nullptr;
         referenceA = 0;
         referenceB = 0;
-        referenceAB = 0;
     }
 };
 
@@ -56,24 +54,10 @@ void traverse_to_rootB(vector<node *> &v, int idx, int interval)
         count++;
     }
 }
-void traverse_to_rootAB(vector<node *> &v, int idx, int interval)
-{
-    int count = 0;
-    node *ptr = v[idx];
-    while (ptr)
-    {
-        if (count % interval == 0)
-        {
-            ptr->referenceAB++;
-        }
-        ptr = ptr->parent;
-        count++;
-    }
-}
-float probability(vector<node *> v, int idx)
+double probability(vector<node *> v, int idx)
 {
     int n = v.size() - 1;
-    float probability = (float)(v[idx]->referenceA + v[idx]->referenceB) / n - (float)v[idx]->referenceAB / (n * n);
+    double probability = (double)(v[idx]->referenceA + v[idx]->referenceB) / n - (double)(v[idx]->referenceA * v[idx]->referenceB) / (n * n);
     return probability;
 }
 int main()
@@ -97,19 +81,14 @@ int main()
         {
             traverse_to_rootA(v, i, a);
             traverse_to_rootB(v, i, b);
-            traverse_to_rootAB(v, i, a * b);
-        }
-        for (size_t i = 1; i <= n; i++)
-        {
-            cout << v[i]->referenceAB << endl;
         }
 
-        float ans = 0;
+        double ans = 0;
         for (size_t i = 1; i <= n; i++)
         {
             ans += probability(v, i);
         }
-        cout << ans << endl;
+        cout << "Case #" << t << ": " << ans << endl;
     }
 
     return 0;
