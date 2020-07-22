@@ -54,10 +54,11 @@ void traverse_to_rootB(vector<node *> &v, int idx, int interval)
         count++;
     }
 }
-double probability(vector<node *> v, int idx)
+double probability(vector<node *> &v, int idx)
 {
     int n = v.size() - 1;
     double probability = (double)(v[idx]->referenceA + v[idx]->referenceB) / n - (double)(v[idx]->referenceA * v[idx]->referenceB) / (n * n);
+    cout << probability << endl;
     return probability;
 }
 int main()

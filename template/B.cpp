@@ -14,10 +14,11 @@ using namespace std;
 
 int main()
 {
-    int t;
-    cin >> t;
-    while (t--)
+    int T;
+    cin >> T;
+    for (int t = 1; t <= T; t++)
     {
     }
+
     return 0;
 }
