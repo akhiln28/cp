@@ -22,11 +22,10 @@ int main()
         cin >> n >> m;
         int x;
         map<int, int> mp;
-        mp.clear();
         for (size_t i = 0; i < n; i++)
         {
             cin >> x;
-            mp.insert(make_pair(x, 1));
+            mp[x]++;
         }
         int count = 0, ans = -1;
         for (size_t i = 0; i < m; i++)
@@ -36,7 +35,6 @@ int main()
             {
                 ans = x;
                 count++;
-                break;
             }
         }
         if (ans != -1)
