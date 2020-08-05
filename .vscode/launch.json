@@ -9,7 +9,9 @@
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${fileDirname}\\out\\${fileBasenameNoExtension}.exe",
-            "args": [],
+            "args": [
+                "< ${fileBasenameNoExtension}_in.txt"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
