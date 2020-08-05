@@ -14,10 +14,9 @@ bool isPossible(vector<int> &v, int ans, int k)
     int sum = 0;
     for (size_t i = 0; i < v.size(); i++)
     {
-        int cuts = ceil(v[i] / ans) - 1;
+        int cuts = ceil((long double)v[i] / ans) - 1;
         sum += cuts;
     }
-    cout << sum << " " << k << endl;
     return sum <= k;
 }
 
@@ -25,11 +24,10 @@ int binary_search(vector<int> &v, int k)
 {
     int max_v = *max_element(v.begin(), v.end());
     int l = 1, r = max_v;
-    while (abs(l - r) > 1)
+    while (r - l > 1)
     {
-        cout << l << " " << r << endl;
-        cout << isPossible(v, (l + r) / 2, k) << endl;
-        if (!isPossible(v, (l + r) / 2, k))
+        bool ispossible = isPossible(v, (l + r)/2, k);
+        if (!ispossible)
         {
             l = (l + r) / 2;
         }
@@ -38,7 +36,9 @@ int binary_search(vector<int> &v, int k)
             r = (l + r) / 2;
         }
     }
-    return l;
+    if (isPossible(v, l, k))
+        return l;
+    else return r;
 }
 
 int main()
