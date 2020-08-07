@@ -6,6 +6,13 @@
     time: 17:59:55
 */
 
+/*
+Sample Input:
+1
+5 100
+10 9 8 7 6
+*/
+
 #include <iostream>
 #include <iostream>
 #include <algorithm>
