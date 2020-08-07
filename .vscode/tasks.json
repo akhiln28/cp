@@ -23,11 +23,25 @@
                 "isDefault": true
             }
         },
+        // {
+        //     "type": "shell",
+        //     "label": "run active file executable",
+        //     "command": "${fileDirname}\\out\\{fileBasenameNoExtension}.exe",
+        //     "args": [],
+        //     "options": {
+        //         "cwd": "${fileDirname}\\out"
+        //     },
+        //     "problemMatcher":"$msCompile",
+        //     "group": {
+        //         "kind": "test",
+        //         "isDefault": true
+        //     }
+        // },
         {
             "type": "shell",
             "label": "g++ build active file",
             "command": "/usr/bin/g++",
-            "args": ["-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}.out"],
+            "args": ["-g", "${file}", "-o", "${fileDirname}/out/${fileBasenameNoExtension}.out"],
             "options": {
               "cwd": "/usr/bin"
             },

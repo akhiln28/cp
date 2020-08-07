@@ -8,10 +8,13 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
-            "args": [],
+            "program": "${fileDirname}/out/${fileBasenameNoExtension}.out",
+            "args": [
+                "<",
+                "${fileDirname}/in/${fileBasenameNoExtension}.txt"
+            ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}/out",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -31,7 +34,8 @@
             "request": "launch",
             "program": "${fileDirname}\\out\\${fileBasenameNoExtension}.exe",
             "args": [
-                "< ${fileBasenameNoExtension}_in.txt"
+                "<",
+                "${fileDirname}\\in\\${fileBasenameNoExtension}.txt"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
