@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <map>
 
@@ -9,33 +10,27 @@ int main()
     int n, m;
     cin >> n >> m;
     vector<long long> a(n), b(m);
+    map<int, int> mpa,mpb;
     for (size_t i = 0; i < n; i++)
     {
         cin >> a[i];
+        mpa[a[i]] = i;
     }
     for (size_t i = 0; i < m; i++)
     {
         cin >> b[i];
+        mpb[b[i]] = i;
     }
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.begin());
 
-    map<long long, int> mp;
-    int count = 0;
-
-    for (size_t i = 0; i < n; i++)
+    for (size_t i = 0; i < m; i++)
     {
-        for (size_t j = 0; j < m; j++)
-        {
-            if (count == n + m - 1)
-                break;
-            int sum = a[i] + b[j];
-            if (mp.find(sum) == mp.end())
-            {
-                mp[sum] = 1;
-                cout << i << " " << j << endl;
-                count++;
-            }
-        }
-        if (count == n + m - 1) break;
+        cout << mpa[a[0]] << " " << mpb[b[i]] << endl;
+    }
+    for (size_t i = 1; i < n; i++)
+    {
+        cout << mpa[a[i]] << " " << mpb[b[m - 1]] << endl;
     }
     return 0;
 }
