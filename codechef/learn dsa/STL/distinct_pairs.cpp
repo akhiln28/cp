@@ -10,7 +10,7 @@ int main()
     int n, m;
     cin >> n >> m;
     vector<long long> a(n), b(m);
-    map<int, int> mpa,mpb;
+    map<long long, int> mpa,mpb;
     for (size_t i = 0; i < n; i++)
     {
         cin >> a[i];
@@ -22,7 +22,7 @@ int main()
         mpb[b[i]] = i;
     }
     sort(a.begin(), a.end());
-    sort(b.begin(), b.begin());
+    sort(b.begin(), b.end());
 
     for (size_t i = 0; i < m; i++)
     {
