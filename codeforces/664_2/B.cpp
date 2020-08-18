@@ -12,27 +12,37 @@
 #include <stdlib.h>
 using namespace std;
 
-int main()
+int main() 
 {
-    int n, m; cin >> n >> m;
-    vector<int> a(n), b(m); 
-    for (int i = 0; i < n; i++)
+    int n, m, x, y; cin >> n >> m >> x >> y;
+    bool arr[n + 1][m + 1];
+    for (int i = 1; i <= n; i++)
     {
-        cin >> a[i];
-    }
-    for (int i = 0; i < m; i++)
-    {
-        cin >> b[i];
-    }
-    int ans = 0;
-    for (int i = 0; i < n; i++)
-    {
-        int minAnd = INT_MAX;
-        for (int j = 0; j < m; j++)
+        for (int j = 1; j < m + 1; j++)
         {
-            minAnd = min(minAnd, a[i] & b[j]);
+            arr[i][j] = false;
         }
-        ans |= minAnd;
     }
-    cout << ans << endl;
+    cout << x << " " << y << endl; arr[x][y] = true;
+    cout << 1 << " " << y << endl; arr[1][y] = true;
+    int count = 2;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i & 1)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (!arr[i][j])
+                    cout << i << " " << j << endl;
+            }
+        }
+        else
+        {
+            for (int j = m; j >= 1; j--)
+            {
+                if (!arr[i][j])
+                    cout << i << " " << j << endl;
+            }
+        }  
+    }
 }

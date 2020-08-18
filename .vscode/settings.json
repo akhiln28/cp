@@ -10,7 +10,10 @@
         "xhash": "cpp",
         "xstring": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "*.tcc": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
     "code-runner.runInTerminal": true,
     "code-runner.preserveFocus": false,
