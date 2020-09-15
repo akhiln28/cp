@@ -10,11 +10,16 @@
 #include <climits>
 #include <cmath>
 #include <stdlib.h>
+#include <chrono>
 using namespace std;
+using namespace std::chrono;
 
-
-int main() {
-    vector<int> v1{1, 2, 3}, v2{1, 2, 3};
-    cout << (v1 == v2) << endl;
+int main()
+{
+    auto start = high_resolution_clock::now();
+    vector<int> v{1, 2, 3, 4, 5, 6};
+    auto it = v.end();
+    auto end = high_resolution_clock::now();
+    cout << duration_cast<milliseconds>(end - start).count() << endl;
     return 0;
 }

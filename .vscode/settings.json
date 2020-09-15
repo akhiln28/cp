@@ -13,7 +13,9 @@
         "xutility": "cpp",
         "*.tcc": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "random": "cpp",
+        "iterator": "cpp"
     },
     "code-runner.runInTerminal": true,
     "code-runner.preserveFocus": false,
