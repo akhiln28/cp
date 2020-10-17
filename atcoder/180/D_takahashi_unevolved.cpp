@@ -26,6 +26,7 @@ int main()
     long long x, y, a, b; 
     cin >> x >> y >> a >> b;
     long long exp = 0; 
+    // mistake: corner case
     while (x <= b and x * (a - 1) <= b and x * a < y)
     {
         x = x * a; 

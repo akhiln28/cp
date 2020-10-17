@@ -27,6 +27,7 @@ int main()
     vector<long long> ans; 
     ans.push_back(1); 
     if (n != 1) ans.push_back(n); 
+    // mistake: boundary conditions
     for (long long i = 2; i * i <= n; i++)
     {
         if (n % i == 0)
