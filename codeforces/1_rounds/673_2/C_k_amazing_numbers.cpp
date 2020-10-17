@@ -1,8 +1,8 @@
 /*
-    title: C.cpp
+    title: C1.cpp
     author: Akhil
     date: 2020-09-27
-    time: 20:33:11
+    time: 21:37:18
 */
 
 #include <iostream>
@@ -11,7 +11,6 @@
 #include <vector>
 #include <map>
 #include <climits>
-#include <set>
 #include <unordered_map>
 #include <unordered_set>
 #include <stack>
@@ -22,44 +21,41 @@
 
 using namespace std;
 
-int is_possible(vector<int> v, int k)
-{
-    multiset<int> s; 
-    for (int i = 0; i < k; i++) s.insert(v[i]); 
-    int l = 0; 
-    for (int i = k; i < v.size(); i++)
-    {
-        if (s.count(v[i])) s.insert(v[i]); 
-        auto it = s.find(v[l]); 
-        if (it != s.end()) s.erase(it);
-        l++; 
-    }
-    if (s.size()) return *s.begin(); 
-    return -1; 
-}
-
 int main()
 {
     int T; cin >> T;
     for (int t = 1; t <= T; t++)
     {
         int n; cin >> n; 
-        vector<int> v(n); 
-        for (auto &i : v) cin >> i;
-        int l = 0, r = n / 2 + 1, ans = n, val; 
-        while (l <= r)
+        vector<int> v(n + 1); 
+        for (int i = 1; i <= n; i++) 
         {
-            int m = l + (r - l)/2;
-            int tmp = is_possible(v, m); 
-            if (tmp != -1) ans = min(ans, m), val = tmp, r = m - 1; 
-            else l = m + 1; 
+            int x; cin >> x; 
+            v[i] = x; 
         }
-        for (int i = 1; i <= n; i++)
+        unordered_map<int, vector<int>> mp; 
+        for (int i = 1; i <= n; i++) if (mp[v[i]].size() == 0 or mp[v[i]].back() != 0) mp[v[i]].push_back(0);
+        for (int i = 1; i <= n; i++) mp[v[i]].push_back(i); 
+        for (int i = 1; i <= n; i++) if (mp[v[i]].back() != n + 1) mp[v[i]].push_back(n + 1); 
+        unordered_map<int, int> per; 
+        for (auto it : mp)
         {
-            if (i < ans) cout << -1 << " "; 
-            else cout << val << " "; 
+            int ans = 0; 
+            for (int i = 1; i < it.second.size(); i++) ans = max(ans, it.second[i] - it.second[i - 1]); 
+            per[it.first] = ans; 
         }
-        cout << endl;
+        sort(v.begin() + 1, v.end()); 
+        int i = 1; 
+        vector<int> ans; 
+        for (int k = n; k >= 1; k--)
+        {
+            while (i < v.size() and per[v[i]] > k) i++; 
+            if (i == v.size()) ans.push_back(-1); 
+            else ans.push_back(v[i]); 
+        }
+        reverse(ans.begin(), ans.end()); 
+        for (int i = 0; i < ans.size(); i++) cout << ans[i] << " ";
+        cout << endl; 
     }
     return 0;
 }
