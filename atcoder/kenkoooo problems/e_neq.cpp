@@ -17,7 +17,7 @@ long long mod = 1e9 + 7;
 
 long long mpow(long long a, long long x)
 {
-    if (x == 0) return 1;
+    if (x == 0 or a == 1) return 1;
     long long temp = mpow(a, x/2);
     if (x & 1) return (temp * ((temp * a) % mod)) % mod;
     else return (temp * temp) % mod;
@@ -50,8 +50,8 @@ int main()
     for (long long i = 1; i <= n; i++)
     {
         long long t = (npr(m - i, n - i) * ncr(n, i)) % mod;
-        if (i & 1) t2 -= t;
-        else t2 += t;
+        if (i & 1) t2 = (t2 - t) % mod;
+        else t2 = (t2 + t) % mod;
     }
     long long ans = ((t1 * t2) % mod + mod) % mod;
     cout << ans << endl;
