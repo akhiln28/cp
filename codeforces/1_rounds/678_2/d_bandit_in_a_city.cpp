@@ -19,21 +19,22 @@
 #include <cmath>
 #include <stdio.h>
 
+#define ll long long
+
 using namespace std;
 
-long long citizen(vector<vector<int>> &tree, int i, vector<int> &pop)
+void dfs(vector<vector<int>> &tree, int i, vector<ll> &pop, 
+        vector<ll> &leaves, vector<ll> &size, ll &ans)
 {
-    if (tree[i].size() == 0) return pop[i]; 
-    vector<long long> vals; 
+    if (tree[i].size() == 0) leaves[i] = 1; 
+    size[i] = pop[i]; 
     for (auto j : tree[i])
     {
-        vals.push_back(citizen(tree, j, pop)); 
+        dfs(tree, j, pop, leaves, size, ans);
+        size[i] += size[j]; 
+        leaves[i] += leaves[j]; 
     }
-    long long maxe = *max_element(vals.begin(), vals.end()); 
-    long long req = 0; 
-    for (auto i : vals) req += (maxe - i); 
-    if (req >= pop[i]) return maxe;
-    else return maxe + (pop[i] - req + vals.size() - 1)/vals.size(); 
+    ans = max(ans, (size[i] + leaves[i] - 1)/leaves[i]);
 }
 
 int main()
@@ -45,9 +46,10 @@ int main()
         int p; cin >> p; 
         tree[p - 1].push_back(i + 1); 
     }
-    vector<int> pop(n); 
+    vector<ll> leaves(n), size(n), pop(n); 
     for (int i = 0; i < n; i++) cin >> pop[i]; 
-    cout << citizen(tree, 0, pop) << endl;
-    cout << citizen(tree, 1, pop) << endl;
+    ll ans = 0; 
+    dfs(tree, 0, pop, leaves, size, ans); 
+    cout << ans << endl;
     return 0;
 }
