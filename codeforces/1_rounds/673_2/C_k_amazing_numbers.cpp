@@ -33,10 +33,12 @@ int main()
             int x; cin >> x; 
             v[i] = x; 
         }
+        // mp <integer, vector of locations where integer occurs>
         unordered_map<int, vector<int>> mp; 
         for (int i = 1; i <= n; i++) if (mp[v[i]].size() == 0 or mp[v[i]].back() != 0) mp[v[i]].push_back(0);
         for (int i = 1; i <= n; i++) mp[v[i]].push_back(i); 
         for (int i = 1; i <= n; i++) if (mp[v[i]].back() != n + 1) mp[v[i]].push_back(n + 1); 
+        // per[integer] is least period 
         unordered_map<int, int> per; 
         for (auto it : mp)
         {
