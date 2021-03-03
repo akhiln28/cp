@@ -10,8 +10,7 @@
 
 using namespace std;
 
-class Trie {
-public:
+struct trie {
     /** Initialize your data structure here. */
     struct node {
         char ch;
@@ -25,7 +24,7 @@ public:
         }
     };
     node *root; 
-    Trie() {
+    trie() {
         root = new node('a' - 1);
     }
     
@@ -74,7 +73,7 @@ public:
 
 int main()
 {
-    Trie t;
+    trie t;
     t.insert("akhil");
     cout << t.search("akhil") << endl;
     cout << t.startsWith("akh") << endl;

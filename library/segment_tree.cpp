@@ -24,7 +24,7 @@ struct segment_tree
 {
     int size;
     vector<long long> sums;
-    void init(int n)
+    segment_tree(int n)
     {
         size = 1;
         while (size < n) size *= 2;
@@ -75,8 +75,8 @@ struct segment_tree
 
     long long sum(int x, int l, int r, int lx, int rx)
     {
-        if (lx >= r or rx <= l) return 0; 
-        if (lx >= l and rx <= r) return sums[x];
+        if (lx >= r || rx <= l) return 0; 
+        if (lx >= l && rx <= r) return sums[x];
 
         int mid = (lx + rx)/2;
         long long s1 = sum(2 * x + 1, l, r, lx, mid);
@@ -96,8 +96,7 @@ int main()
     int n, m;
     cin >> n >> m;
 
-    segment_tree st;
-    st.init(n);
+    segment_tree st(n);
 
     vector<int> arr(n);
     for (int i = 0; i < n; i++)

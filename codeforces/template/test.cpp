@@ -1,10 +1,10 @@
 #include <iostream>
+#include <numeric>
 #include <algorithm>
-#include <functional>
-#include <numeric> 
 #include <vector>
 #include <map>
 #include <set>
+#include <unordered_set>
 #include <unordered_map>
 #include <list>
 #include <stack>
@@ -12,14 +12,16 @@
 #include <cmath>
 #include <utility>
 
+#define ll long long
+
 using namespace std;
 
 int main()
 {
-    vector<int> v{1, 3, 9, 91, 1, 27};
-    sort(v.begin(), v.end(), greater<int>());
-    for (int i = 0; i < v.size(); i++)
+    int num_cases; cin >> num_cases; 
+    for (int case_num = 0; case_num < num_cases; case_num++)
     {
-        cout << v[i] << " ";   
+
     }
+    return 0; 
 }
