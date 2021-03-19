@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <utility>
 #include <vector>
+#include <array>
 #include <string>
 #include <map>
 #include <climits>
@@ -22,7 +23,7 @@ public:
         auto profit = [&](double passed, double total){
             return (passed + 1)/(total + 1) - passed/total;
         };
-        priority_queue<pair<double, vector<int>>> pq;
+        priority_queue<pair<double, array<int, 2>>> pq;
         double ans = 0;
         for (auto &c : classes)
         {
