@@ -22,9 +22,11 @@ using namespace std;
     date: 2021-03-21
     time: 07:46:53
     ==================================================
-    k s k s -> 3
-    s k -> 0
-    k k s k s -> 2 + 2 + 1 = 5
+    k s k s -> 3 done
+    s k -> 0 done
+    k k s k s -> 2 + 2 + 1 = 5 done
+    k k k k k s s s s -> 20 done
+
 */
 int main()
 {
