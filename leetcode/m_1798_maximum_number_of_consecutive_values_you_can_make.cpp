@@ -53,17 +53,18 @@ class Solution {
 public:
     int getMaximumConsecutive(vector<int>& coins) {
         sort(coins.rbegin(), coins.rend());
-        int start = 0;
+        int horizon = 0;
         while (coins.size())
         {
-            if (coins.back() <= 1 + start)
+            if (coins.back() <= 1 + horizon)
             {
-                start += coins.back();
+                // expanding the horizon
+                horizon += coins.back();
                 coins.pop_back();
             }
             else break;
         }
-        return 1 + start;
+        return 1 + horizon;
     }
 };
 int main()
