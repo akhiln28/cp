@@ -57,9 +57,7 @@ vector<string> tokenise(string &str)
 }
 int main()
 {
-    string str;
-    getline(cin, str);
-    auto ret = tokenise(str);
-    for (auto e : ret) cout << e << endl;
+    vector<int> v{2, 3, 239};
+    v.push_back({2, 43});
     return 0;
 }
