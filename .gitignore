@@ -1,2 +1,16 @@
 **/*.exe
 **/*.out
+.DS_Store
+leetcode/1834_single_threaded_cpu.dSYM/Contents/Info.plist
+leetcode/1834_single_threaded_cpu
+atcoder/.metals/metals.log
+.gitignore
+atcoder/.metals/metals.h2.db
+atcoder/.metals/readonly/scala/App.scala
+atcoder/.metals/readonly/scala/io/StdIn.scala
+atcoder/.vscode/settings.json
+leetcode/.metals/metals.h2.db
+leetcode/.metals/metals.lock.db
+leetcode/.metals/metals.log
+atcoder/.scalafmt.conf
+tempCodeRunnerFile.cpp
