@@ -30,23 +30,33 @@ using namespace std;
     for each element check what is the total ops required to make all the elements to current element.
         you have to iterate from i to 0
 
+    The above logic is wrong..
+    for each element we need to find the maximum total length you can make using at most k operations.
+
+    first reverse sort the array, and for each element find the farthest you can go using k operations.
+    the farthest you can go is monotonic and hence we can use sliding window technique in O(n)
+
+    for start = 1 to n:
+        while (end - start + 2) * nums[start] - sum(start -> end + 1) <= k:
+            sum += nums[++end];
 */
 class Solution {
 public:
     int maxFrequency(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end());
+        sort(nums.rbegin(), nums.rend());
         int n = nums.size();
-        long long cum = 0;
-        int ans = 1;
-        // cout << n << endl;
-        for (int i = 0; i < n; i++)
+        long long ans = 1;
+
+        long long start = 0, end = 0;
+        long long sum = nums[start];
+        for  (start = 0; start < n; start++)
         {
-            cum += nums[i];
-            if (i and nums[i] == nums[i - 1]) {ans = i + 1; continue;}
-            long long total_required = (i + 1) * (1LL) * nums[i];
-            long long rem = total_required - cum;
-            if (rem <= k) ans = i + 1;
-            else break;
+            while (end + 1 < n and (end - start + 2) * nums[start] - sum - nums[end + 1] <= k)
+            {
+                sum += nums[++end];
+            }
+            ans = max(ans, end - start + 1);
+            sum -= nums[start];
         }
         return ans;
     }
