@@ -63,7 +63,18 @@ public:
     int min_adjacent_swaps(string num1, string num2)
     {
         int n = num1.length();
-        int i = 0;
+        int ret = 0;
+        for (int i = 0; i < n; i++)
+        {
+            int j = i;
+            while (num1[i] != num2[j]) j++;
+            while (i < j)
+            {
+                swap(num2[j], num2[j - 1]); j--;
+                ret++;
+            }
+        }
+        return ret;
     }
     int getMinSwaps(string num, int k) {
         string num1 = num;
@@ -71,15 +82,15 @@ public:
         {
             num1 = next_smallest(num1);
         }
-        cout << num1 << endl;
         return min_adjacent_swaps(num, num1);
     }
 };
 int main()
 {
-    string num1, num2;
+    string num = "11112";
+    int k = 4;
     Solution obj;
-    auto ret = obj.getMinSwaps(num1, num2);
+    auto ret = obj.getMinSwaps(num, k);
     cout << ret << endl;
     return 0;
 }
