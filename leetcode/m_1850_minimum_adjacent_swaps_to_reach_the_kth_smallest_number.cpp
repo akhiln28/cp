@@ -43,23 +43,6 @@ using namespace std;
 */
 class Solution {
 public:
-    string next_smallest(string num)
-    {
-        int idx = num.length();
-        for (int idx = num.length() - 2; idx >= 0; idx--)
-        {
-            if (num[idx] < num[idx + 1])
-            {
-                int idx2 = num.length() - 1;
-                while (num[idx2] <= num[idx]) idx2--;
-                swap(num[idx], num[idx2]);
-                sort (num.begin() + idx + 1, num.end());
-                break;
-            }
-        }
-        // complexity: O(n)
-        return num;
-    }
     int min_adjacent_swaps(string num1, string num2)
     {
         int n = num1.length();
@@ -80,7 +63,7 @@ public:
         string num1 = num;
         while (k--)
         {
-            num1 = next_smallest(num1);
+            next_permutation(num1.begin(), num1.end());
         }
         return min_adjacent_swaps(num, num1);
     }
