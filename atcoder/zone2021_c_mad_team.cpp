@@ -41,9 +41,6 @@ using namespace std;
     c3, c2, c4, c1, c5, c6
     c4, c1, c5, c2, c3, c6
     c2, c1, c4, c3, c5, c6
-
-
-
 */
 int main()
 {

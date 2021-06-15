@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "leetcode_e4450af6"
+        },
+        {
+            "type": "java",
+            "name": "Launch m_1871_jump_game_7",
+            "request": "launch",
+            "mainClass": "m_1871_jump_game_7",
+            "projectName": "leetcode_e4450af6"
+        },
+        {
             "name": "g++-10 - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",

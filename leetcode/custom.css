@@ -1,0 +1,12 @@
+#code-node,
+#quote,
+.quote {
+    background-color: rgba(240, 240, 240, 0.993); /*#474c50;*/
+    border: none;
+    color: rgba(0, 0, 0, 0.6); /*text */
+    font-family:monospace;
+    padding: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 14px; /*CHANGE HERE*
+}

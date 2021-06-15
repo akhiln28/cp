@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "581e931870cb6322",
+    "type": "split",
+    "children": [
+      {
+        "id": "082250af7cbf9568",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44d56a8730f09b53",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cf47d95ec1ca090",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf6a940ed0c7e55d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a83d5dd6c6541292",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#concept",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7eb4266af0a6ec63",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cce0753a1820363",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "648a85bfc48bc468",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "082250af7cbf9568",
+  "lastOpenFiles": [
+    "State.md",
+    "Dynamic Programming.md",
+    "Greedy.md",
+    "Untitled.md",
+    "random_inputs.md",
+    "README.md",
+    "codeforces/1_rounds/651_2/Readme.md"
+  ]
+}
