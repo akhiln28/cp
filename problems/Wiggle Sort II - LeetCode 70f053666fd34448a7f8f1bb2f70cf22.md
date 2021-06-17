@@ -1,0 +1,41 @@
+# Wiggle Sort II - LeetCode
+
+Created Time: Feb 12, 2021 7:42 AM
+Last edited time: May 23, 2021 8:53 AM
+Pattern: https://www.notion.so/Array-af1fbf6be3da4abfadba9d43c8017242, https://www.notion.so/Greedy-ea1f204b1d0b40e89fdb87f6dc8055d3, https://www.notion.so/Inplace-56639a79fe9b43679b7b82f728770acd
+Points: 2000
+Source: https://leetcode.com/problems/wiggle-sort-ii/
+Status: waiting
+
+Given an integer array `nums`, reorder it such that `nums[0] < nums[1] > nums[2] < nums[3]...`.
+
+You may assume the input array always has a valid answer.
+
+**Example 1:**
+
+```
+Input: nums = [1,5,1,1,6,4]
+Output: [1,6,1,5,1,4]
+Explanation: [1,4,1,5,1,6] is also accepted
+```
+
+**Example 2:**
+
+```
+Input: nums = [1,3,2,2,3,1]
+Output: [2,3,1,3,1,2]
+```
+
+**Constraints:**
+
+- `1 <= nums.length <= 5 * 104`
+- `0 <= nums[i] <= 5000`
+- It is guaranteed that there will be an answer for the given input `nums`.
+
+**Follow Up:** Can you do it in `O(n)` time and/or **in-place** with `O(1)` extra space?
+
+---
+
+The solution in the discuss is a little complex. 
+
+[O(n)+O(1) after median --- Virtual Indexing - LeetCode Discuss](https://leetcode.com/problems/wiggle-sort-ii/discuss/77677/O(n)%2BO(1)-after-median-Virtual-Indexing)

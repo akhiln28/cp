@@ -1,4 +1,4 @@
-# CP
+# Coding
 Contains list of all the contests that I am wrote or practiced
 
 Contains codes for the following contests

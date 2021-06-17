@@ -1,0 +1,43 @@
+# Maximum Value at a Given Index in a Bounded Array - LeetCode
+
+Created Time: Mar 30, 2021 8:44 AM
+Do Date: Apr 01, 2021
+Last edited time: Apr 02, 2021 8:58 AM
+Pattern: https://www.notion.so/Binary-Search-c1187205516c42ac9b3b3c69f153914a
+Source: https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/
+Status: done
+
+![LeetCode_Sharing.png](problems/Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array%20%200bd6c9ba25a34123927c6b746bb982b2/LeetCode_Sharing.png)
+
+You are given three positive integers: `n`, `index`, and `maxSum`. You want to construct an array `nums` (**0-indexed**) that satisfies the following conditions:
+
+- `nums.length == n`
+- `nums[i]` is a **positive** integer where `0 <= i < n`.
+- `abs(nums[i] - nums[i+1]) <= 1` where `0 <= i < n-1`.
+- The sum of all the elements of `nums` does not exceed `maxSum`.
+- `nums[index]` is **maximized**.
+
+Return `nums[index]` *of the constructed array*.
+
+Note that `abs(x)` equals `x` if `x >= 0`, and `-x` otherwise.
+
+**Example 1:**
+
+```
+Input: n = 4, index = 2,  maxSum = 6
+Output: 2
+Explanation: nums = [1,2,2,1] is one array that satisfies all the conditions.
+There are no arrays that satisfy all the conditions and have nums[2] == 3, so 2 is the maximum nums[2].
+```
+
+**Example 2:**
+
+```
+Input: n = 6, index = 1,  maxSum = 10
+Output: 3
+```
+
+**Constraints:**
+
+- `1 <= n <= maxSum <= 10^9`
+- `0 <= index < n`
