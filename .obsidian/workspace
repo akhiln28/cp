@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "082250af7cbf9568",
+        "id": "748e0e375b183134",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -82,7 +82,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "082250af7cbf9568",
+  "active": "748e0e375b183134",
   "lastOpenFiles": [
     "State.md",
     "Dynamic Programming.md",
