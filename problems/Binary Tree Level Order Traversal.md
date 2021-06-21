@@ -1,0 +1,7 @@
+---
+Created Time: Dec 01, 2020 11:55 PM
+Do Date: Jan 29, 2021
+Last edited time: May 11, 2021 9:11 AM
+Points: 1500
+Status: ok
+Patterns: [Binary%20Tree](Binary%20Tree.md)

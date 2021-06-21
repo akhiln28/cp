@@ -67,5 +67,6 @@
         "sass": "sass --style expanded",
         "scss": "scss --style expanded",
         "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
-    }
+    },
+    "python.pythonPath": "python3"
 }
