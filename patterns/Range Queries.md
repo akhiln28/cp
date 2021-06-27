@@ -4,6 +4,7 @@ Last Edit Time: Feb 22, 2021 9:17 PM
 ---
 
 # Range Queries
-
-[Segment Tree](Range%20Queries%20c69c3bd150e342bc80b0bb39aa252111/Segment%20Tree%20dd04fa5f3c704f508087f6f232208e20.md)
-Patterns: 
+Queries such as 
+1. find the least element in the given range
+2. find the largest element in the given range
+3. find the xor of the elements in the given range

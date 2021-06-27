@@ -8,5 +8,5 @@ Status: active
 
 # Cumulative
 
-$$Problems \space on \space Cumulative$$
 Patterns: 
+Parent: [Dp](Dp.md)

@@ -15,7 +15,6 @@ Tags: new
 You are given a binary matrix `matrix` of size `m x n`, and you are allowed to rearrange the **columns** of the `matrix` in any order.
 Return *the area of the largest submatrix within* `matrix` *where **every** element of the submatrix is* `1` *after reordering the columns optimally.*
 **Example 1:**
-![Largest%20Submatrix%20With%20Rearrangements%20-%20LeetCode%20533a14be49a74598be0877ba4a886fbb/screenshot-2020-12-30-at-40536-pm.png](Largest%20Submatrix%20With%20Rearrangements%20-%20LeetCode%20533a14be49a74598be0877ba4a886fbb/screenshot-2020-12-30-at-40536-pm.png)
 ```
 Input: matrix = [[0,0,1],[1,1,1],[1,0,1]]
 Output: 4

@@ -3,12 +3,13 @@ Created Time: Dec 12, 2020 8:24 PM
 Do Date: Dec 12, 2020
 Last edited time: May 11, 2021 8:57 AM
 Points: 1700
-Problem Statement: Given an integer array A of length N (<300000). You need to support two types of queries, (1, x, y) → update A[x] ^= y. And (2, x, y) → return A[x]^A[x + 1]^....^A[y]. 
 Source: https://atcoder.jp/contests/abc185/tasks/abc185_f
 Status: ok
 ---
 
 # F - Range Xor Query
+## Problem Statement: 
+Given an integer array A of length N (<300000). You need to support two types of queries, (1, x, y) → update A[x] ^= y. And (2, x, y) → return A[x]^A[x + 1]^....^A[y]. 
 
 [Brush up on segment trees 30 mins](https://www.notion.so/Brush-up-on-segment-trees-30-mins-da66c4db6114403d9897c1ff4e5a994c) 
 ```cpp
@@ -124,4 +125,4 @@ int main()
     return 0;
 }
 ```
-Patterns: [Array](Array.md)[Segment%20Tree](patterns/Segment%20Tree.md)
+Patterns: [Array](Array.md), [Segment Tree](patterns/Segment%20Tree.md)

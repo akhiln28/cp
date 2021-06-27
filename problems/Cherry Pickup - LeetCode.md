@@ -4,7 +4,6 @@ Do Date: Jan 01, 2021
 Last edited time: Mar 01, 2021 8:47 AM
 Points: 2100
 Pomos (25 mins): 1
-Related To: Food%20delivery%20to%20tech%20park%209a4169968d2d4e1bb1e2badb2f1d70cb.md
 Source: https://leetcode.com/problems/cherry-pickup/
 Status: waiting
 Tags: new
@@ -22,7 +21,6 @@ Return *the maximum number of cherries you can collect by following the rules be
 - When passing through a path cell containing a cherry, you pick it up, and the cell becomes an empty cell `0`.
 - If there is no valid path between `(0, 0)` and `(n - 1, n - 1)`, then no cherries can be collected.
 **Example 1:**
-![Cherry%20Pickup%20-%20LeetCode%20a73c725479264cd2a914d52d1a898d4b/grid.jpg](Cherry%20Pickup%20-%20LeetCode%20a73c725479264cd2a914d52d1a898d4b/grid.jpg)
 ```
 Input: grid = [[0,1,-1],[1,0,-1],[1,1,1]]
 Output: 5
@@ -53,3 +51,4 @@ Greedy does not work. Consider the following example
 0 0 1 1 1
 ```
 Patterns: [Matrix](Matrix.md)[Dp](Dp.md)
+Related: [Food delivery to tech park](Food%20delivery%20to%20tech%20park.md)

@@ -18,9 +18,7 @@ An "L-shape" is defined as an unordered pair of segments, which has all the foll
 - The length of the longer segment is twice the length of the shorter segment.
 We need to count the number of L-shapes in the grid.
 Below you can find two examples of correct L-shapes,
-![L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/examples_correct.png](L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/examples_correct.png)
 and three examples of **invalid** L-shapes.
-![L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/examples_incorrect.png](L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/examples_incorrect.png)
 Note that in the shape on the left, two segments do not share a common endpoint. The next two shapes do not meet the last requirement, as in the middle shape both segments have the same length, and in the last shape the longer segment is longer than twice the length of the shorter one.
 ### Input
 ### Output
@@ -49,8 +47,6 @@ Case #1: 1
 Case #2: 9
 ```
 In Sample Case #1, there is one L-shape.
-![L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/sample1.png](L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/sample1.png)
 In Sample Case #2, there are nine L-shapes.
 The first three L-shapes are shown on the picture below.
-![L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/sample2.png](L%20Shaped%20Plots%20-%20Kick%20Start%2059b1e8fde6a7453abf099f037936d8a2/sample2.png)
 Patterns: 

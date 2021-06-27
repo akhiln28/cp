@@ -19,7 +19,6 @@ Output: 6
 Explanation: The polygon is already triangulated, and the score of the only triangle is 6.
 ```
 **Example 2:**
-![Minimum%20Score%20Triangulation%20of%20Polygon%20-%20LeetCode%20bec8990d651945e3917e4a6f8b59a02c/minimum-score-triangulation-of-polygon-1.png](Minimum%20Score%20Triangulation%20of%20Polygon%20-%20LeetCode%20bec8990d651945e3917e4a6f8b59a02c/minimum-score-triangulation-of-polygon-1.png)
 ```
 Input: [3,7,4,5]
 Output: 144
@@ -36,4 +35,4 @@ Explanation: The minimum score triangulation has score 1*1*3 + 1*1*4 + 1*1*5 + 1
 2. `1 <= A[i] <= 100`
 ---
 This solution is very good. [https://leetcode.com/problems/minimum-score-triangulation-of-polygon/discuss/286753/C%2B%2B-with-picture](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/discuss/286753/C%2B%2B-with-picture)
-Patterns: [Array](Array.md)[Dp](Dp.md)
+Patterns: [Array](Array.md), [Dp](Dp.md)

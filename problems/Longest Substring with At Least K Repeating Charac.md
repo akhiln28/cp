@@ -7,7 +7,7 @@ Source: https://leetcode.com/problems/longest-substring-with-at-least-k-repeatin
 Status: waiting
 ---
 
-# Longest Substring with At Least K Repeating Characters - Leetcode
+# Longest [Substring](Substring.md) with At Least K Repeating Characters - Leetcode
 
 Given a string `s` and an integer `k`, return *the length of the longest substring of* `s` *such that the frequency of each character in this substring is greater than or equal to* `k`.
 **Example 1:**

@@ -7,7 +7,7 @@ Source: https://leetcode.com/problems/longest-palindromic-substring/
 Status: done
 ---
 
-# Longest Palindromic Substring
+# Longest Palindromic [Substring](Substring.md)
 
 ```cpp
 class Solution {

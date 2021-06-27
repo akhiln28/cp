@@ -8,6 +8,7 @@ Status: waiting
 
 # Cover Maximum Range [intervals]
 
+## Problem Statement
 Given an array containing activities. Find the minimum number of intervals need to cover maximum range. 
----
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Intervals](Intervals.md)
+
+Patterns: [Greedy](patterns/Greedy.md), [Intervals](Intervals.md)
