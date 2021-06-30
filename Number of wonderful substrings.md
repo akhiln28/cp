@@ -40,3 +40,4 @@ If a substring has 2 odd repetitions all its super strings are invalid. How to u
 #### References
 1. [Number of Substrings](Number%20of%20Substrings.md)
 2. [Linear](Linear)
+3. [Source](https://leetcode.com/contest/weekly-contest-247/problems/number-of-wonderful-substrings/)
