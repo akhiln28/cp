@@ -11,4 +11,4 @@ Status: ok
 
 The explanation in video is very nice. 
 [https://youtu.be/wGXB9OWhPTg](https://youtu.be/wGXB9OWhPTg)
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

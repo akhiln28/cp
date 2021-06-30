@@ -19,4 +19,4 @@ int kth_max(Node *root, int k)
 	kth_max(root->left, k); 
 }
 ```
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

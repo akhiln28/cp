@@ -6,7 +6,8 @@ Points: 1800
 Pomos (25 mins): 1
 Source: https://binarysearch.com/problems/A-Maniacal-Walk
 Status: ok
-Tags: new, number of paths
+Topic: [number theory]
+Tags: [count, dp]
 ---
 
 # A Maniacal Walk
@@ -47,4 +48,4 @@ int solve(int length, int n) {
     return dp[0]; 
 }
 ```
-Patterns: [Dp](Dp.md)[Number%20Theory](Number%20Theory.md)[Linear%20DP](Linear%20DP.md)
+Patterns: [Number Theory](Number%20Theory.md)

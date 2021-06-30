@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "cf033c6babba2947",
+        "id": "7c6e76200d453dad",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "patterns/Substring.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "03670d558a7b837e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "template/problem.md",
-            "mode": "source"
+            "file": "Number of substrings containing all three characters.md",
+            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "number of substrings",
+                "query": "tag:#binary_tree",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +60,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "patterns/Substring.md",
+                "file": "Number of substrings containing all three characters.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -94,7 +83,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.6616093603272306,
+                  "scale": 2.140848657728678,
                   "close": true
                 }
               }
@@ -104,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.5
+    "width": 566.5,
+    "collapsed": true
   },
   "right": {
     "id": "7eb4266af0a6ec63",
@@ -120,14 +110,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "patterns/Substring.md",
+                "file": "Number of substrings containing all three characters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -137,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "patterns/Substring.md"
+                "file": "Number of substrings containing all three characters.md"
               }
             }
           }
@@ -145,20 +135,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 502.5,
+    "width": 422.9783935546875,
     "collapsed": true
   },
-  "active": "cf033c6babba2947",
+  "active": "7c6e76200d453dad",
   "lastOpenFiles": [
-    "patterns/Substring.md",
-    "Number of Substrings.md",
-    "Number of wonderful substrings.md",
-    "template/problem.md",
+    "Number of substrings containing all three characters.md",
+    "patterns/Sliding Window.md",
+    "Monotonic.md",
     "template/pattern.md",
     "Untitled.md",
-    "problems/Partition given string in such manner that i'th su.md",
-    "Cyclically rotating a grid.md",
-    "Substring.md",
-    "The number of full rounds you have played.md"
+    "Count the Number of Binary Search Trees present in a Binary Tree.md",
+    "Maximum number of trailing zeros in the product of the subsets of size k.md",
+    "problems/Count the Number of Binary Search Trees present in a binary tree.md",
+    "Count the Number of Binary Search Trees present in a Binary Tee.md",
+    "Number of subtrees in a binary tree.md"
   ]
 }

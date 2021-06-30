@@ -14,4 +14,4 @@ Tags: de shaw
 
 Given an integer n. Construct a complete binary tree containing n elements. 
 ---
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

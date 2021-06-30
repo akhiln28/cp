@@ -25,4 +25,4 @@ LCA(node *root, node *n1, node* n2)
 	if find(root->left, n1) and find(root->left, n2) return root->left;
 	if find(root->right, n1) and find(root->right, n2) return root->right;	
 ```
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

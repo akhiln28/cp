@@ -45,4 +45,4 @@ public:
     }
 };
 ```
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

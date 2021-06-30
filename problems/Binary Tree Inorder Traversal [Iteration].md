@@ -5,4 +5,4 @@ Last edited time: May 11, 2021 9:11 AM
 Points: 1500
 Status: done
 Tags: standard
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

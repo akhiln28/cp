@@ -9,4 +9,4 @@ Tags: de shaw
 # BST → complete BST
 
 Given a BST, convert it to a complete BST (A Tree is a complete Binary Tree if all the levels are completely filled except possibly the last level and the last level has all keys as left as possible) . My interviewer explained me the question. I was sitting idle . Nothing crossed my mind. I coded the solution for BST to AVL tree. He was adamant and wanted complete tree configuration. I gave up and he didn’t gave me any hints. from [DE Shaw Interview Experience 3 - GeeksforGeeks](https://www.notion.so/DE-Shaw-Interview-Experience-3-GeeksforGeeks-27bf5e35c2ec40d6a9028ea5942cda48)
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

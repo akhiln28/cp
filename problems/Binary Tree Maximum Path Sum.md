@@ -28,4 +28,4 @@ Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 
 - The number of nodes in the tree is in the range `[1, 3 * 104]`.
 - `1000 <= Node.val <= 1000`
 ---
-Patterns: [Binary%20Tree](Binary%20Tree.md)
+Patterns: [Binary%20Tree](patterns/Binary%20Tree.md)

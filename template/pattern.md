@@ -5,7 +5,8 @@ tags: [pattern]
 level: 
 ---
 
-# <% tp.file.title %> 
+# <% tp.file.title %>
+
 ## Forces
 
 ### Pseudo code
