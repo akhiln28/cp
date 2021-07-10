@@ -17,7 +17,7 @@ Return *the max sliding window*.
 ```
 Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
 Output: [3,3,5,5,6,7]
-Explanation: 
+Explanation:
 Window position                Max
 ---------------               -----
 [1  3  -1] -3  5  3  6  7       3
@@ -56,19 +56,19 @@ Output: [4]
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        vector<int> ans; 
+        vector<int> ans;
 				// the elements in the window are always in decreasing order
         deque<int> window;
         for (int i = 0; i < nums.size(); i++)
         {
-            while (window.size() and window.front() < i - k + 1) 
-								window.pop_front(); 
-            while (window.size() and nums[window.back()] < nums[i]) 
-								window.pop_back(); 
-            window.push_back(i); 
+            while (window.size() and window.front() < i - k + 1)
+								window.pop_front();
+            while (window.size() and nums[window.back()] < nums[i])
+								window.pop_back();
+            window.push_back(i);
             if (i >= k - 1) ans.push_back(nums[window.front()]);
         }
-        return ans; 
+        return ans;
     }
 };
 ```
@@ -76,21 +76,21 @@ public:
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        vector<int> ans; 
+        vector<int> ans;
         multiset<int, greater<int>> window;
         for (int i = 0; i < k; i++)
         {
-            window.insert(nums[i]); 
+            window.insert(nums[i]);
         }
         ans.push_back(*window.begin());
         for (int i = k; i < nums.size(); i++)
         {
             window.erase(window.find(nums[i - k]));
-            window.insert(nums[i]); 
+            window.insert(nums[i]);
             ans.push_back(*window.begin());
         }
-        return ans; 
+        return ans;
     }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

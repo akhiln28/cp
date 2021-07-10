@@ -10,7 +10,6 @@ Status: done
 
 # Frequency of the Most Frequent Element - LeetCode
 
-![LeetCode_Sharing.png](Frequency%20of%20the%20Most%20Frequent%20Element%20-%20LeetCode%20ef7bde2cf3ef4d28beaa097d49086e24/LeetCode_Sharing.png)
 The **frequency** of an element is the number of times it occurs in an array.
 You are given an integer array `nums` and an integer `k`. In one operation, you can choose an index of `nums` and increment the element at that index by `1`.
 Return *the **maximum possible frequency** of an element after performing **at most*** `k` *operations*.
@@ -39,4 +38,6 @@ Output: 1
 - `1 <= nums.length <= 105`
 - `1 <= nums[i] <= 105`
 - `1 <= k <= 105`
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+
+### References
+1. [[Sliding Window]]

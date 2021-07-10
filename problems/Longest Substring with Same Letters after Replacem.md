@@ -30,7 +30,7 @@ Input: String="abccde", k=1
 Output: 3
 Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating substring "ccc".
 ```
-Standard sliding window question. 
+Standard sliding window question.
 [educative.io](http://educative.io) code
 ```cpp
 using namespace std;
@@ -68,4 +68,4 @@ int main(int argc, char *argv[]) {
   cout << CharacterReplacement::findLength("abccde", 1) << endl;
 }
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

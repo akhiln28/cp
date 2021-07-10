@@ -10,16 +10,15 @@ Tags: graph, path cost, swiggy
 
 # Swiggy Mascot Travel
 
-![Swiggy%20Mascot%20Travel%2095ff829855de46f7b4f8ca1d1501620c/Untitled.png](Swiggy%20Mascot%20Travel%2095ff829855de46f7b4f8ca1d1501620c/Untitled.png)
 There is an excitation matrix A of the size NxM where $A[i][j]$ signifies the excitation level of the node present in i th row and j th column. 
 All the excitation energy values in the matrix are non-negative. 
 Swiggy Mascot has to travel from the left most node in the first row to right most node in the last row using the least energy possible. 
 From a node on the matrix, Mascot is allowed to move in only four directions and in each move Mascot can take only one step i.e go one step vertically, horizontally, to the right or to the left. 
-The energy required for a move from one node to its adjacent node is the modulus difference between the excitation energies of the nodes i.e ifX, Y are the excitation energies of the two adjacent nodes then energy required for this step is IX-YI . If path P from Source S to destination D is defined as the maximum of all the energies required over the path i.e if P involves traveling through points R, T - then the energy required to travel from Source S to destination D is max(energy_required(S,R), energy_required(R,T), energy_required(T,D)). 
+The energy required for a move from one node to its adjacent node is the modulus difference between the excitation energies of the nodes i.e if X, Y are the excitation energies of the two adjacent nodes then energy required for this step is IX-YI . If path P from Source S to destination D is defined as the maximum of all the energies required over the path i.e if P involves traveling through points R, T - then the energy required to travel from Source S to destination D is max(energy_required(S,R), energy_required(R,T), energy_required(T,D)). 
 Help Swiggy Mascot in finding the least energy value using which it can travel from the top left most corner to bottom right most corner. 
 **Input Format:** 
 The first line contains two values N and M. The number of rows and columns respectively, 
-The next N lines each contain M space separated values. The j th value in the i th row signifies the excitation energy of the j th node in the ith row. 
+The next N lines each contain M space separated values. The jth value in the ith row signifies the excitation energy of the jth node in the ith row. 
 **Constraints**: 
 $1 \le (N * M) \le 10^5$
 $1 \le A[i][j] \le 10^9$

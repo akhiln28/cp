@@ -10,7 +10,7 @@ Status: done
 
 # A - A*B*C
 
-Given a positive integer $k$, find the number of triples of positive integers (A,B,C) such that  $ABC \le k$. Two triples that only differ in the order of numbers are also distinguished.
+Given a positive integer $k$, find the number of triples of positive integers (A,B,C) such that  `A.B.C <= k`. Two triples that only differ in the order of numbers are also distinguished.
 ### **Constraints**
 - $1 \le k \le 2 \times 10^5$
 - $k$ is an integer.

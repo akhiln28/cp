@@ -22,20 +22,20 @@ Easy sliding window.
 class Solution {
 public:
     int minSubArrayLen(int s, vector<int>& nums) {
-        int n = nums.size(), left = 0, right = -1; 
+        int n = nums.size(), left = 0, right = -1;
         int window = 0, ans = n + 1;
         for (left = 0; left < n; left++)
         {
             while (right + 1 < n and window < s)
             {
-                right++; 
-                window += nums[right]; 
+                right++;
+                window += nums[right];
             }
-            if (window >= s) ans = min(ans, right - left + 1); 
-            window -= nums[left]; 
+            if (window >= s) ans = min(ans, right - left + 1);
+            window -= nums[left];
         }
-        return (ans == n + 1) ? 0 : ans; 
+        return (ans == n + 1) ? 0 : ans;
     }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [[Sliding Window]]

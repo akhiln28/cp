@@ -2,12 +2,11 @@
 Created Time: Dec 19, 2020 10:37 PM
 Last edited time: Feb 18, 2021 7:45 AM
 Source: https://stackoverflow.com/questions/3492302/easy-interview-question-got-harder-given-numbers-1-100-find-the-missing-numbe
-Status: waiting
+Status: done
 ---
 
 # algorithm - Easy interview question got harder: given numbers 1..100, find the missing number(s) given exactly k are missing - Stack Overflow
 
-![apple-touch-icon@2.png](algorithm%20-%20Easy%20interview%20question%20got%20harder%20giv%20571f36d9d0bf4f63857c1a0b239604ff/apple-touch-icon2.png)
 I had an interesting job interview experience a while back. The question started really easy:
 > Q1: We have a bag containing numbers 1, 2, 3, …, 100. Each number appears exactly once, so there are 100 numbers. Now one number is randomly picked out of the bag. Find the missing number.
 I've heard this interview question before, of course, so I very quickly answered along the lines of:

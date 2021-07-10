@@ -26,4 +26,4 @@ Output: 17
 **Constraints:**
 - `1 <= s.length <= 500`
 - `s` consists of only lowercase English letters.
-Patterns: [Sliding%20Window](Sliding%20Window.md)
+Patterns: [[Sliding Window]]

@@ -10,4 +10,8 @@ Status: active
 > ### Store the results of a state to be reused later.
 
 Patterns: 
+
+```dataview
+table file.name FROM ([[Dp]])
+```
   

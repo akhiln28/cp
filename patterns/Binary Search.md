@@ -7,5 +7,5 @@ Parent: Greedy%20ea1f204b1d0b40e89fdb87f6dc8055d3.md
 
 # Binary Search
 
-$$Problems \space on \space Binary \space Search$$
-Patterns: 
+### References
+1. [[patterns/Greedy]]

@@ -31,16 +31,16 @@ Could you find an algorithm that runs in O(n) time?
 class Solution {
 public:
     string minWindow(string s, string t) {
-        unordered_map<int, int> tmap; 
+        unordered_map<int, int> tmap;
         for (auto ch : t)
         {
-            tmap[ch]++; 
+            tmap[ch]++;
         }
-        int end = 0, count = tmap.size(); 
-        if (tmap.find(s[0]) != tmap.end()) 
+        int end = 0, count = tmap.size();
+        if (tmap.find(s[0]) != tmap.end())
         {
-            tmap[s[0]]--; 
-            if (tmap[s[0]] == 0) count--; 
+            tmap[s[0]]--;
+            if (tmap[s[0]] == 0) count--;
         }
         pair<int, int> p{0, s.length() + 1}; // substring as a pair
         for (int start = 0; start <= (int) s.length() - (int) t.length(); start++)
@@ -48,25 +48,25 @@ public:
             while (count and end + 1 < s.length())
             {
                 end++;
-                if (tmap.find(s[end]) != tmap.end()) 
+                if (tmap.find(s[end]) != tmap.end())
                 {
                     tmap[s[end]]--;
-                    if (tmap[s[end]] == 0) count--; 
+                    if (tmap[s[end]] == 0) count--;
                 }
             }
             if (count == 0 and p.second - p.first + 1 > end - start + 1)
             {
-                p = {start, end}; 
+                p = {start, end};
             }
             if (tmap.find(s[start]) != tmap.end())
             {
-                if (tmap[s[start]] == 0) count++; 
+                if (tmap[s[start]] == 0) count++;
                 tmap[s[start]]++;
             }
         }
-        if (p.second != s.length() + 1) return s.substr(p.first, p.second - p.first + 1); 
-        return ""; 
+        if (p.second != s.length() + 1) return s.substr(p.first, p.second - p.first + 1);
+        return "";
     }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

@@ -12,22 +12,22 @@ Tags: two pointers
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        int end = 0, n = s.length(); 
-        set<int> inside; 
-        int ans = 0; 
-        inside.insert(s[0]); 
+        int end = 0, n = s.length();
+        set<int> inside;
+        int ans = 0;
+        inside.insert(s[0]);
         for (int start = 0; start < n; start++)
         {
-            while (end + 1 < n and inside.count(s[end + 1]) == 0) 
+            while (end + 1 < n and inside.count(s[end + 1]) == 0)
             {
-                end++; 
-                inside.insert(s[end]); 
+                end++;
+                inside.insert(s[end]);
             }
-            ans = max(ans, end - start + 1); 
+            ans = max(ans, end - start + 1);
             inside.erase(s[start]);
         }
         return ans;
     }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

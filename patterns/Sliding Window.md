@@ -9,3 +9,5 @@ Status: active
 
 
 
+### References
+1. [[patterns/Greedy]]

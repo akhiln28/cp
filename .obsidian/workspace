@@ -4,12 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "7c6e76200d453dad",
+        "id": "76281657177781fe",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Number of substrings containing all three characters.md",
+            "file": "Longest Prefix Sequence.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "de55b7af8ed4da12",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "problems/Longest Increasing Path.md",
             "mode": "preview"
           }
         }
@@ -39,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#binary_tree",
+                "query": "number of elements to the right ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,7 +71,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Number of substrings containing all three characters.md",
+                "file": "Longest Prefix Sequence.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -83,7 +94,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 2.140848657728678,
+                  "scale": 1.356698361544689,
                   "close": true
                 }
               }
@@ -93,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 566.5,
+    "width": 457.5,
     "collapsed": true
   },
   "right": {
@@ -110,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Number of substrings containing all three characters.md",
+                "file": "Longest Prefix Sequence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Number of substrings containing all three characters.md"
+                "file": "Longest Prefix Sequence.md"
               }
             }
           }
@@ -138,17 +149,17 @@
     "width": 422.9783935546875,
     "collapsed": true
   },
-  "active": "7c6e76200d453dad",
+  "active": "76281657177781fe",
   "lastOpenFiles": [
-    "Number of substrings containing all three characters.md",
-    "patterns/Sliding Window.md",
+    "Longest Prefix Sequence.md",
+    "problems/Longest Increasing Path.md",
+    "patterns/Trie.md",
+    "Largest Magic Square.md",
+    "patterns/Dp.md",
+    "problems/Allocate Mailboxes.md",
+    "patterns/Cumulative.md",
+    "Number of wonderful substrings.md",
     "Monotonic.md",
-    "template/pattern.md",
-    "Untitled.md",
-    "Count the Number of Binary Search Trees present in a Binary Tree.md",
-    "Maximum number of trailing zeros in the product of the subsets of size k.md",
-    "problems/Count the Number of Binary Search Trees present in a binary tree.md",
-    "Count the Number of Binary Search Trees present in a Binary Tee.md",
-    "Number of subtrees in a binary tree.md"
+    "Number of Substrings.md"
   ]
 }

@@ -22,4 +22,4 @@ Every number within a window of size `2` has pair differences of at most `4` (fr
 ### **Explanation**
 Within a window size of `3` we have `abs(1 - 7) > 4`, so this is above the limit.
 def solve(self, nums, window, limit):
-Patterns: [Sliding%20Window](Sliding%20Window.md)
+Patterns: [[Sliding Window]]

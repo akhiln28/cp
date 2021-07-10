@@ -31,7 +31,7 @@ Output: ""
 Explanation: No substring in the given string has all characters of the pattern.
 ```
 ---
-We create a hashmap for pattern. 
+We create a hashmap for pattern.
 ```cpp
 using namespace std;
 #include <iostream>
@@ -42,18 +42,18 @@ class MinimumWindowSubstring {
   static string findSubstring(const string &str, const string &pattern) {
     unordered_map<char, int> ump;
     for (auto ch : pattern) ump[ch]++;
-    int end = -1, n = str.length(), matched = 0; 
-    pair<int, int> ans{0, n + 1}; 
+    int end = -1, n = str.length(), matched = 0;
+    pair<int, int> ans{0, n + 1};
     for (int start = 0; start < n - pattern.length(); start++)
     {
         while (end + 1 < n && matched < ump.size())
         {
             if (ump.find(str[end + 1]) != ump.end())
             {
-                ump[str[end + 1]]--; 
-                if (ump[str[end + 1]] == 0) matched++; 
+                ump[str[end + 1]]--;
+                if (ump[str[end + 1]] == 0) matched++;
             }
-            end++; 
+            end++;
         }
         if (matched == ump.size())
         {
@@ -62,11 +62,11 @@ class MinimumWindowSubstring {
         if (ump.find(str[start]) != ump.end())
         {
             if (ump[str[start]] == 0) matched--;
-            ump[str[start]]++; 
+            ump[str[start]]++;
         }
     }
     return (ans.second != n + 1) ? str.substr(ans.first, ans.second - ans.first + 1) : "";
   }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

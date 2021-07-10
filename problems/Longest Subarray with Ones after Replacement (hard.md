@@ -39,10 +39,10 @@ class ReplacingOnes {
     {
         while (end + 1 < n and end + 1 - start + 1 - (ones + (arr[end + 1] == 1)) <= k)
         {
-            end++; 
+            end++;
             ones = ones + (arr[end] == 1);
         }
-        maxLength = max(maxLength, end - start + 1); 
+        maxLength = max(maxLength, end - start + 1);
         if (arr[start] == 1) ones--;
     }
     return maxLength;
@@ -84,4 +84,4 @@ int main(int argc, char* argv[]) {
   cout << ReplacingOnes::findLength(vector<int>{0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1}, 3) << endl;
 }
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

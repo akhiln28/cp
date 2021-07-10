@@ -6,12 +6,14 @@ level:
 ---
 
 # <% tp.file.title %> 
-### Problem Statement
+## Problem Statement
 
 
-#### Examples
+### Examples
 
-### Solution
+## Approach
 
-#### References
+## Solution
+
+### References
 

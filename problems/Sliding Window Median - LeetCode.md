@@ -25,7 +25,7 @@ Window position                Median
  1  3  -1  -3  5 [3  6  7]      6
 ```
 Therefore, return the median sliding window as `[1,-1,-1,3,5,6]`.
-**Note:** 
+**Note:**
 You may assume `k` is always valid, ie: `k` is always smaller than input array's size for non-empty array.
 Answers within `10^-5` of the actual value will be accepted as correct.
-Patterns: [Array](Array.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [Array](Array.md)[[Sliding Window]]

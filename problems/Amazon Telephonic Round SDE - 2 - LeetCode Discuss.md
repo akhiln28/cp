@@ -3,7 +3,6 @@ Created Time: Jan 14, 2021 11:53 PM
 Do Date: Jan 17, 2021
 Last edited time: Mar 01, 2021 3:43 PM
 Points: 1500
-Problem Statement: Given an even number (greater than 2), return two prime numbers whose sum will be equal to given number. There are several combinations possible. Print only first such pair.
 Source: https://leetcode.com/discuss/interview-question/1017012/amazon-telephonic-round-sde-2
 Status: done
 ---
@@ -14,7 +13,7 @@ Given an even number $n$ (greater than 2), return two prime numbers whose sum wi
 Input : 8
 Output : (3,5)
 Follow Up : Print all pairs that sum up to the input number.
----
+
 We can get the list of all primes less than the given number $n$. And then we can use two pointer technique to find all the pairs that sum up to $n$. As shown below. 
 we are using [Sieve of Eratosthenes - GeeksforGeeks](Sieve%20of%20Eratosthenes%20-%20GeeksforGeeks%20c4fa828f26d748bd8af24fde1bdcfb42.md) 
 ```cpp
@@ -59,4 +58,6 @@ int main()
     return 0;
 }
 ```
-Patterns: [Two%20Pointers](Two%20Pointers.md)[patterns/Greedy](patterns/Greedy.md)
+Patterns: 
+1. [[Two Pointers]]
+2. [[Number Theory]]

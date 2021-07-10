@@ -23,7 +23,7 @@ Output: [3]
 Explanation: The only substring containing both the words is "catfox".
 ```
 ---
-I kind of hate this problem. This is brute force. 
+I kind of hate this problem. This is brute force.
 ```cpp
 using namespace std;
 #include <iostream>
@@ -76,4 +76,4 @@ int main(int argc, char *argv[]) {
   cout << endl;
 }
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

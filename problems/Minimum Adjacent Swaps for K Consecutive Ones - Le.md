@@ -40,32 +40,32 @@ Explanation: nums already has 2 consecutive 1's.
 class Solution {
 public:
     int minMoves(vector<int>& nums, int k) {
-        vector<int> ones; 
+        vector<int> ones;
         for (int i = 0; i < nums.size(); i++)
         {
-            if (nums[i]) ones.push_back(i); 
+            if (nums[i]) ones.push_back(i);
         }
-        int n = ones.size(); 
-        vector<long long> pref(n); pref[0] = ones[0]; 
-        for (int i = 1; i < n; i++) pref[i] = pref[i - 1] + ones[i]; 
-        
+        int n = ones.size();
+        vector<long long> pref(n); pref[0] = ones[0];
+        for (int i = 1; i < n; i++) pref[i] = pref[i - 1] + ones[i];
+
         long long ans = 1e18;
         auto cum = [&](int i, int j){
-            if (j < i) return 0LL; 
-            if (i == 0) return pref[j]; 
-            return pref[j] - pref[i - 1]; 
+            if (j < i) return 0LL;
+            if (i == 0) return pref[j];
+            return pref[j] - pref[i - 1];
         };
         for (int start = 0; start <= n - k; start++)
         {
             int end = start + k - 1;
             int mid = start + k/2;
-            long long countl = mid - start, countr = end - mid; 
-            long long temp = (ones[mid] * countl - cum(start, mid - 1) + cum(mid + 1, end) - ones[mid] * countr); 
-            temp -= (countl * (countl + 1)/2 + countr * (countr + 1)/2); 
-            ans = min(ans, temp); 
+            long long countl = mid - start, countr = end - mid;
+            long long temp = (ones[mid] * countl - cum(start, mid - 1) + cum(mid + 1, end) - ones[mid] * countr);
+            temp -= (countl * (countl + 1)/2 + countr * (countr + 1)/2);
+            ans = min(ans, temp);
         }
-        return ans; 
+        return ans;
     }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

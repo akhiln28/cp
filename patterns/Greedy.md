@@ -6,11 +6,3 @@ Status: active
 ---
 
 # Greedy
-
-$$Problems \space on \space Greedy$$
-
-### Children
-[Two Pointers](Two%20Pointers.md)
-[Sliding Window](Sliding%20Window.md)
-[Binary Search](Binary%20Search.md)
-[BFS](BFS.md)

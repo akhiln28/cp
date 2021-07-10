@@ -27,17 +27,17 @@ Note that [10, 5, 2] is not included as the product of 100 is not strictly less 
 class Solution {
 public:
     int numSubarrayProductLessThanK(vector<int>& nums, int k) {
-        if (nums.size() == 0) return 0; 
-        long long right = 0, left = 0, prod = 1, ans = 0; 
+        if (nums.size() == 0) return 0;
+        long long right = 0, left = 0, prod = 1, ans = 0;
 				// for each right -> find the smallest possible left
         for (right = 0; right < nums.size(); right++)
         {
-            prod *= nums[right]; 
+            prod *= nums[right];
             while (prod >= k and left <= right) prod /= nums[left], left++;
-            ans += right - left + 1; 
+            ans += right - left + 1;
         }
-        return ans; 
+        return ans;
     }
 };
 ```
-Patterns: [Sliding%20Window](Sliding%20Window.md)
+Patterns: [[Sliding Window]]

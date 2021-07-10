@@ -27,7 +27,7 @@ Output: 3
 Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 4, 1] or [1, 1, 6].
 ```
 ---
-maintain two pointers, start = end = 0. 
+maintain two pointers, start = end = 0.
 ```cpp
 using namespace std;
 #include <iostream>
@@ -37,27 +37,27 @@ using namespace std;
 class MinSizeSubArraySum {
  public:
   static int findMinSubArray(int S, const vector<int>& arr) {
-    int n = arr.size(); 
-    int start = 0, end = 0; 
-    int sum = arr[start]; 
-    int ans = INT_MAX; 
+    int n = arr.size();
+    int start = 0, end = 0;
+    int sum = arr[start];
+    int ans = INT_MAX;
     while (start < n)
     {
         while (end + 1 < n and sum < S)
         {
-            end++; 
-            sum += arr[end]; 
+            end++;
+            sum += arr[end];
         }
         while (sum - arr[start] >= S)
         {
-            sum -= arr[start]; 
-            start++; 
+            sum -= arr[start];
+            start++;
         }
-        if (sum >= S) ans = min(ans, end - start + 1); 
+        if (sum >= S) ans = min(ans, end - start + 1);
         sum -= arr[start], start++;
     }
     return (ans != INT_MAX ? ans : 0);
   }
 };
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

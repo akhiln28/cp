@@ -8,4 +8,9 @@ Relates: Start%20of%20the%20cycle%20in%20linked%20list%20b19f3b0ab9f8467684956c7
 Source: https://leetcode.com/problems/linked-list-cycle/
 Status: done
 Tags: mathisys
-Patterns: [Linked%20List](Linked%20List.md)[Slow%20Pointer](Slow%20Pointer.md)
+---
+
+# Linked List Cycle
+
+1. [[Linked List]]
+2. [[Slow Pointer]]

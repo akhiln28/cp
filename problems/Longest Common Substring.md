@@ -4,13 +4,12 @@ Do Date: Dec 19, 2020
 Last edited time: Mar 01, 2021 8:47 AM
 Points: 1500
 Pomos (25 mins): 1
-Problem Statement: Longest common subarray among the two arrays
 Source: https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 Status: done
 Tags: standard
 ---
 
-# [Longest common [Substring](Substring.md)] Maximum Length of Repeated Subarray - LeetCode
+# Maximum Length of Repeated Subarray - Length of longest common substring
 
 Given two integer arrays `A` and `B`, return the maximum length of an subarray that appears in both arrays.
 **Example 1:**
@@ -26,6 +25,8 @@ The repeated subarray with maximum length is [3, 2, 1].
 1. 1 <= len(A), len(B) <= 1000
 2. 0 <= A[i], B[i] < 100
 ---
+**`dp[i][j]` denotes the length of the longest substring ending at $i$ in `A` and ending at `j` in `B`**
+
 ```cpp
 class Solution {
 public:
@@ -45,4 +46,4 @@ public:
     }
 };
 ```
-Patterns: [Two Pointers](Two%20Pointers.md)
+Patterns: [[Two Pointer DP]]

@@ -83,4 +83,4 @@ int main(int argc, char *argv[]) {
   cout << "Permutation exist: " << StringPermutation::findPermutation("aaacb", "abc") << endl;
 }
 ```
-Patterns: [patterns/Greedy](patterns/Greedy.md)[Sliding%20Window](Sliding%20Window.md)
+Patterns: [patterns/Greedy](patterns/Greedy.md)[[Sliding Window]]

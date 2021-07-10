@@ -39,4 +39,6 @@ public:
     }
 };
 ```
-Patterns: [Matrix](Matrix.md)[Hashing](Hashing.md)[Slow%20Pointer](Slow%20Pointer.md)
+
+1. [[Matrix]]
+2. [[Slow Pointer]]
